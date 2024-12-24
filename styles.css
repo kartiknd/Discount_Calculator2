@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input, select {
+    width: calc(100% - 12px); 
+    padding: 10px;
+    margin: 5px 0 15px 0; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+select {
+    background-color: white;
+    -webkit-appearance: none;  /* Removes default dropdown arrow in WebKit browsers */
+    -moz-appearance: none;     /* Removes default dropdown arrow in Firefox */
+    appearance: none;          /* Removes default dropdown arrow */
+    cursor: pointer;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}

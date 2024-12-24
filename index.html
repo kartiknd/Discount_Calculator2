@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<form>
+    <div class="container">
+        <h1>Discount Calculator</h1>
+        
+        <label for="mrp">Enter MRP:</label>
+        <input type="number" id="mrp" placeholder="Enter MRP" required>
+        
+        <label for="sellingPrice">Enter Selling Price:</label>
+        <input type="number" id="sellingPrice" placeholder="Enter Selling Price" required>
+        
+        <label for="difference">Enter Price Difference (x):</label>
+        <input type="number" id="difference" placeholder="Enter Difference" required>
+        
+        <label for="middleSize">Enter Size:</label>
+        <input type="number" id="middleSize" placeholder="Enter Size" required>
+
+        <button type="submit" onclick="calculateDiscount(event)">Calculate Discount</button>
+
+        <h2>Discounts:</h2>
+        <div id="results"></div>
+    </div>
+</form>
+</body>
+</html>
