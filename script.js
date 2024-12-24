@@ -13,14 +13,14 @@ function calculateDiscount(event) {
         return;
     }
 
-    let resultsHTML = "<table><tr><th>Size</th><th>Selling Price</th><th>Discount (%)</th></tr>";
+    let resultsHTML = "<table><tr><th>Selling Price</th><th>Size</th><th>Discount (%)</th></tr>";
 
     // Calculate sizes and selling prices
     for (let i = -4; i <= 4; i++) {
         const currentSize = middleSize + (i * 2); // Size changes by 2
         const currentSellingPrice = sellingPrice + (i * difference);
         const discount = ((mrp - currentSellingPrice) / mrp) * 100;
-        resultsHTML += `<tr><td>${currentSize}</td><td>₹${currentSellingPrice.toFixed(2)}</td><td>${discount.toFixed(2)}%</td></tr>`;
+        resultsHTML += `<tr><td>₹${currentSellingPrice.toFixed(2)}</td><td>${currentSize}</td><td>${discount.toFixed(2)}%</td></tr>`;
     }
 
     resultsHTML += "</table>";
